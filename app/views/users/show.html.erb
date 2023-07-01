@@ -1,0 +1,5 @@
+<h1>ユーザー詳細画面</h1>
+
+<% %i[name email postcode prefecture address_city address_street address_building profile].each do |attr| %>
+  <p><%= attr %>: <%= @user.send(attr) %></p>
+<% end %>
