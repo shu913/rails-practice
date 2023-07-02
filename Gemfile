@@ -79,3 +79,5 @@ gem 'devise-i18n'
 gem 'erb_lint'
 
 gem 'carrierwave'
+
+gem 'kaminari'
