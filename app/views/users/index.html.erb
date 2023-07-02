@@ -4,6 +4,7 @@
   <% @users.each do |user| %>
     <li>
       <%= link_to user.name, user %>
+      <%= image_tag(user.picture_url) if user.picture.present? %>
     </li>
   <% end %>
 </ul>

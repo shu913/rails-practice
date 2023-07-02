@@ -3,3 +3,6 @@
 <% %i[name email postcode prefecture address_city address_street address_building profile].each do |attr| %>
   <p><%= attr %>: <%= @user.send(attr) %></p>
 <% end %>
+
+<p>picture:</p>
+<%= image_tag(@user.picture_url) if @user.picture.present? %>
